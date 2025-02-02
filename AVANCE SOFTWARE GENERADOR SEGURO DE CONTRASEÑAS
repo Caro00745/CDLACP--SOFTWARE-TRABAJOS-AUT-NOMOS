@@ -9,7 +9,9 @@ def generar_contraseña (longitud=10):
     contraseña=''.join(secrets.choice(caracteres) for _ in range(longitud))
 
     return contraseña
-  
+
+longitud = int(input("Ingrese la longitud de la contraseña deseada:"))
+
 contraseña_segura = generar_contraseña(longitud=10)
 print("Contraseña segura generada" , contraseña_segura)
 
